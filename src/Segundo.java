@@ -1,13 +1,13 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Segundo {
     public static void main(String[] args) throws Exception {
-        System.setProperty("webdriver.edge.driver", "./driver/msedgedriver.exe");
+        System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
 
-        WebDriver driver = new EdgeDriver();
+        WebDriver driver = new FirefoxDriver();
         driver.get("https://www.goat.com"); 
         Thread.sleep(5000);
 
